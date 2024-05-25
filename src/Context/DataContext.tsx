@@ -1,7 +1,7 @@
 import React from "react";
 import useFetch from "../Hooks/useFetch";
 
-type IVenda = {
+export type IVenda = {
   id: string;
   nome: string;
   preco: number;

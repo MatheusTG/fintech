@@ -30,7 +30,7 @@ const Resumo = () => {
             .toLocaleString("pr-br", { style: "currency", currency: "BRL" })}
         </div>
       </div>
-      <div className="box">Gráficos</div>
+      <div className="box mb">Gráficos</div>
     </section>
   );
 };
