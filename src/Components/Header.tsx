@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
+import { useData } from "../Context/DataContext";
 
 const Header = () => {
-  return (
-    <div>Header</div>
-  )
-}
+  const { data } = useData();
 
-export default Header
+  return <div>Header</div>;
+};
+
+export default Header;

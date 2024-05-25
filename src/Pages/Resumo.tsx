@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
+import { useData } from "../Context/DataContext";
 
 const Resumo = () => {
-  return (
-    <div>Resumo</div>
-  )
-}
+  const { data } = useData();
 
-export default Resumo
+  console.log(data);
+  return <div>Resumo</div>;
+};
+
+export default Resumo;
