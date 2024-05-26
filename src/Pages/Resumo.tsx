@@ -1,9 +1,9 @@
+import GraficoVendas from "../Components/GraficoVendas";
 import { useData } from "../Context/DataContext";
 
 const Resumo = () => {
   const { data } = useData();
 
-  console.log(data);
   if (data === null) return null;
   return (
     <section>
@@ -30,7 +30,9 @@ const Resumo = () => {
             .toLocaleString("pr-br", { style: "currency", currency: "BRL" })}
         </div>
       </div>
-      <div className="box mb">Gráficos</div>
+      <div className="box mb">
+        <GraficoVendas data={data} />
+      </div>
     </section>
   );
 };
